@@ -1,0 +1,121 @@
+body {
+    background-color: #2E2E2E;
+    font-size: 44px;
+    color: #FAEDCD;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h2 {
+    margin: 0;
+}
+
+.break-session-length {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    font-size: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+div>button {
+    color: #292929;
+    background-color: #F7E2CE;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+div button:nth-child(2) {
+    color: white;
+    background-color: rgb(31, 30, 30);
+}
+
+strong {
+    margin: 0 8px;
+}
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.timer {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 10px;
+    background-color: rgb(31, 30, 30);
+
+}
+
+.timer-wrapper>button {
+    margin-left: 10px
+}
+
+@media screen and (max-width: 700px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    #session-label,
+    #break-label {
+        font-size: 30px;
+    }
+
+    .break-session-length {
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        height: 100%;
+    }
+
+    .break-session-length {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .break-session-length button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+}
